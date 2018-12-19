@@ -22,4 +22,14 @@ router.get('/article/add',crt.showArticle)
 
 router.post('/article/add',crt.addArticle)
 
+router.get('/article/info/:id',crt.showArticleDetail)
+
+router.get('/article/edit/:id',crt.showEditPage)
+
+router.post('/article/edit',crt.postEditPage)
+
+router.get('/article/query',crt.getShow)
+
+router.get('/article/query/:key',crt.getQuery)
+
 module.exports = router
